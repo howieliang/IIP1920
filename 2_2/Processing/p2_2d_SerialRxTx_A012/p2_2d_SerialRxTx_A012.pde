@@ -61,4 +61,7 @@ void keyPressed() {
   if (key == 'L' || key == 'l') {
     port.write('a');
   }
+  if (key == 'K' || key == 'k') {
+    port.write('b');
+  }
 }
