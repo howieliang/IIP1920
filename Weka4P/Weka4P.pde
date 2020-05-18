@@ -14,6 +14,11 @@ import weka.classifiers.functions.supportVector.PolyKernel; //https://weka.sourc
 import weka.classifiers.functions.LinearRegression; //https://weka.sourceforge.io/doc.dev/weka/classifiers/functions/LinearRegression.html
 import weka.classifiers.evaluation.RegressionAnalysis; //https://weka.sourceforge.io/doc.dev/weka/classifiers/evaluation/RegressionAnalysis.html
 import weka.classifiers.functions.supportVector.RegSMOImproved; //https://weka.sourceforge.io/doc.dev/weka/classifiers/functions/supportVector/RegSMOImproved.html
+import weka.classifiers.meta.AttributeSelectedClassifier; //https://weka.sourceforge.io/doc.dev/weka/classifiers/meta/AttributeSelectedClassifier.html
+import weka.attributeSelection.InfoGainAttributeEval; //https://weka.sourceforge.io/doc.dev/weka/attributeSelection/InfoGainAttributeEval.html
+import weka.attributeSelection.CorrelationAttributeEval;
+import weka.attributeSelection.Ranker; //https://weka.sourceforge.io/doc.dev/weka/attributeSelection/Ranker.html
+
 
 DataSource source;
 Instances train;
@@ -24,6 +29,11 @@ Evaluation eval;
 
 PGraphics pg;
 Classifier cls;
+
+AttributeSelectedClassifier attrSelCls;
+CorrelationAttributeEval corrEval;
+Ranker ranker;
+InfoGainAttributeEval IGEval;
 
 
 int nClassesTrain;
@@ -59,6 +69,7 @@ String model = "";
 double C = 64;
 double gamma = 64;
 double epsilon = 64;
+double corrThld = 0.5;
 int K = 1;
 int fold = 5;
 int unit = 2;
@@ -211,6 +222,43 @@ double[] getProbability(float[] _features, ArrayList<Attribute> _attributes) {
   return prob;
 }
 
+double getAttrSelPredictionIndex(float[] _features) {
+  double _pred = -1;
+  try {
+    Instances test = new Instances("Test Data", attributesTrain, 0);
+    test.setClassIndex(attributesTrain.size()-1);
+    Instance instance = new DenseInstance(attributesTrain.size());
+    for (int i = 0; i<_features.length; i++) {
+      instance.setValue(attributesTrain.get(i), _features[i]);
+    }
+    instance.setDataset(test);
+    _pred = attrSelCls.classifyInstance(instance);
+  }
+  catch (Exception ex) {
+    ex.printStackTrace();
+  }
+  return _pred;
+}
+
+String getAttrSelPrediction(float[] _features) {
+  String label = "";
+  try {
+    Instances test = new Instances("Test Data", attributesTrain, 0);
+    test.setClassIndex(attributesTrain.size()-1);
+    Instance instance = new DenseInstance(attributesTrain.size());
+    for (int i = 0; i<_features.length; i++) {
+      instance.setValue(attributesTrain.get(i), _features[i]);
+    }
+    instance.setDataset(test);
+    int _pred = (int) attrSelCls.classifyInstance(instance);
+    label = train.classAttribute().value(_pred);
+  }
+  catch (Exception ex) {
+    ex.printStackTrace();
+  }
+  return label;
+}
+
 double getPredictionIndex(float[] _features) {
   double _pred = -1;
   try {
@@ -268,7 +316,7 @@ void evaluateTestSet(boolean _isRegression, boolean _showEvalDetails) {
       rmse = eval.rootMeanSquaredError();
       rae = eval.relativeAbsoluteError();
       rrse = eval.rootRelativeSquaredError();
-      
+
       LinearRegression lReg= new LinearRegression();
       lReg.buildClassifier(train);
       slope = lReg.coefficients()[0];
@@ -396,6 +444,36 @@ void evaluateTrainSet(int _fold, boolean _isRegression, boolean _showEvalDetails
         prcTrain[i] = eval.areaUnderPRC(i);
         mccTrain[i] = eval.matthewsCorrelationCoefficient(i);
       }
+    }
+  }
+  catch(java.lang.Exception e) {
+    println(e);
+  }
+}
+
+void rankAttrLSVC(double C) {
+  attrSelCls = new AttributeSelectedClassifier();
+  corrEval = new CorrelationAttributeEval();
+  ranker = new Ranker();
+  try {
+    cls = new SMO();
+    ((SMO)cls).setC(C);
+    attrSelCls.setClassifier(cls);
+    attrSelCls.setSearch(ranker);
+    attrSelCls.setEvaluator(corrEval);
+    attrSelCls.buildClassifier(train);
+    double[][] ra = ranker.rankedAttributes();
+    println("Rank\tIndex\tAttrName\tValue");
+    for (int i = 0; i < ra.length; i++) {
+      int index = (int)ra[i][0];
+      print(i+1);
+      print('\t');
+      print(index);
+      print('\t');
+      print(train.attribute(index).name());
+      print('\t');
+      print(ra[i][1]);
+      println();
     }
   }
   catch(java.lang.Exception e) {
@@ -629,6 +707,12 @@ void printEvalResults(Instances ins, Classifier cls, int n_fold) {
   }
 }
 
+void setModelDrawing(int pixelSize, Classifier cls) {
+  if (nAttributesTrain == 3) pg = getModelImage(pg, cls, train, pixelSize, pixelSize); 
+  else pg = createGraphics(width, height); // cannot show the KNN model image for now
+}
+
+
 void setModelDrawing(int pixelSize) {
   if (nAttributesTrain == 3) pg = getModelImage(pg, cls, train, pixelSize, pixelSize); 
   else pg = createGraphics(width, height); // cannot show the KNN model image for now
@@ -752,7 +836,6 @@ void drawDataPoints() {
     popStyle();
   }
 }
-
 
 PGraphics getModelImage(PGraphics pg, Classifier cls, Instances training, int w, int h) {
   //drawModelImage
@@ -885,7 +968,7 @@ void drawEpsSearchResults(float x, float y, float w, float h) {
   for (int c = 0; c < EpsList.length; c++) {
     float X = c%N*W;
     float Y = floor(c/N)*W;
-    String s = "e="+nf((float)EpsList[c],0,4)+"\n"+nf((float)accuracyGrid[c][0], 0, 2);
+    String s = "e="+nf((float)EpsList[c], 0, 4)+"\n"+nf((float)accuracyGrid[c][0], 0, 2);
     fill(255);
     text(s, X+10, Y+32);
   }
