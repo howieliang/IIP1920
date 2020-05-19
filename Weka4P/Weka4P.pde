@@ -81,6 +81,7 @@ double[][] accuracyGrid;// = new double[numOfC][numOfGamma];
 //double[][] timeLapseGrid;// = new double[numOfC][numOfGamma];
 boolean showEvalDetails = true;
 boolean isRegression = false;
+boolean drawModels = true;
 
 double[] CList;
 double[] gammaList;
@@ -879,6 +880,10 @@ PGraphics getModelImage(PGraphics pg, Classifier cls, Instances training, int w,
 }
 
 void CSearchLSVC(double[] _CList) {
+  CSearchLSVC(_CList, true);
+}
+
+void CSearchLSVC(double[] _CList, boolean _drawModels) {
   CList = _CList;
   accuracyGrid = new double[_CList.length][1];
   modelImageGrid = new PImage[_CList.length][1];
@@ -886,13 +891,17 @@ void CSearchLSVC(double[] _CList) {
     trainLinearSVC(C=_CList[c]);
     evaluateTrainSet(fold=5, isRegression=false, showEvalDetails=false);        //5-fold cross validation
     setModelDrawing(unit=ceil(sqrt(_CList.length))*2);         //set the model visualization (for 2D features)
-    modelImageGrid[c][0] = pg.get();
+    if(_drawModels)modelImageGrid[c][0] = pg.get();
     accuracyGrid[c][0] = accuracyTrain;
     println(fold+"-fold CV Accuracy:", nf((float)accuracyTrain, 0, 2), "%\n");
   }
 }
 
-void EpsSearchLSVR(double[] _EpsList) {
+void EpsSearchLSVR(double[] _EpsList){
+  EpsSearchLSVR(_EpsList, true);
+}
+
+void EpsSearchLSVR(double[] _EpsList, boolean _drawModels) {
   EpsList = _EpsList;
   accuracyGrid = new double[_EpsList.length][1];
   modelImageGrid = new PImage[_EpsList.length][1];
@@ -900,7 +909,7 @@ void EpsSearchLSVR(double[] _EpsList) {
     trainLinearSVR(epsilon=_EpsList[c]);
     evaluateTrainSet(fold=5, isRegression=true, showEvalDetails=false);        //5-fold cross validation
     setModelDrawing(unit=ceil(sqrt(_EpsList.length))*2);         //set the model visualization (for 2D features)
-    modelImageGrid[c][0] = pg.get();
+    if(_drawModels)modelImageGrid[c][0] = pg.get();
     accuracyGrid[c][0] = rmse;
     println(fold+"-fold CV Accuracy:", nf((float)accuracyTrain, 0, 2), "%\n");
   }
@@ -976,7 +985,11 @@ void drawEpsSearchResults(float x, float y, float w, float h) {
   popMatrix();
 }
 
-void gridSearchSVR_RBF(double[] _EpsList, double[] _gammaList) {
+void gridSearchSVR_RBF(double[] _EpsList, double[] _gammaList){
+  gridSearchSVR_RBF(_EpsList, _gammaList, true);
+}
+
+void gridSearchSVR_RBF(double[] _EpsList, double[] _gammaList, boolean _drawModels) {
   EpsList = _EpsList;
   gammaList = _gammaList;
   accuracyGrid = new double[_EpsList.length][_gammaList.length];
@@ -986,14 +999,18 @@ void gridSearchSVR_RBF(double[] _EpsList, double[] _gammaList) {
       trainRBFSVR(epsilon=_EpsList[c], gamma=_gammaList[g]);
       evaluateTrainSet(fold=5, isRegression=true, showEvalDetails=false);        //5-fold cross validation
       setModelDrawing(unit=_gammaList.length*2);         //set the model visualization (for 2D features)
-      modelImageGrid[c][g] = pg.get();
+      if(_drawModels)modelImageGrid[c][g] = pg.get();
       accuracyGrid[c][g] = rmse;
       println(fold+"-fold CV Accuracy:", nf((float)accuracyTrain, 0, 2), "%\n");
     }
   }
 }
 
-void gridSearchSVC_RBF(double[] _CList, double[] _gammaList) {
+void gridSearchSVC_RBF(double[] _CList, double[] _gammaList){
+  gridSearchSVC_RBF(_CList, _gammaList, true);
+}
+
+void gridSearchSVC_RBF(double[] _CList, double[] _gammaList, boolean _drawModels) {
   CList = _CList;
   gammaList = _gammaList;
   accuracyGrid = new double[_CList.length][_gammaList.length];
@@ -1003,7 +1020,7 @@ void gridSearchSVC_RBF(double[] _CList, double[] _gammaList) {
       trainRBFSVC(gamma=_gammaList[g], C=_CList[c]);
       evaluateTrainSet(fold=5, isRegression=false, showEvalDetails=false);        //5-fold cross validation
       setModelDrawing(unit=_gammaList.length*2);         //set the model visualization (for 2D features)
-      modelImageGrid[c][g] = pg.get();
+      if(_drawModels)modelImageGrid[c][g] = pg.get();
       accuracyGrid[c][g] = accuracyTrain;
       println(fold+"-fold CV Accuracy:", nf((float)accuracyTrain, 0, 2), "%\n");
     }
