@@ -1,9 +1,12 @@
 ***Example Codes: Interactive Intelligent Products***
+
 DBB220, Department of Industrial Design, TU Eindhoven, 2020
 
-**Responsible Lecturer: Dr. Rong-Hao Liang***
-Assistant Processor, Future Everyday Group, Industrial Design, TU Eindhoven
-Assistant Processor, Signal Processing Systems Group, Electrical Engineering, TU Eindhoven
+**Responsible Lecturer: Dr. Rong-Hao Liang**
+
+*Assistant Processor, Future Everyday Group, Industrial Design, TU Eindhoven*
+
+*Assistant Processor, Signal Processing Systems Group, Electrical Engineering, TU Eindhoven*
 
 Homepage: http://www.ronghaoliang.me/
 
