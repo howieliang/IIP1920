@@ -1,23 +1,20 @@
-**Example Codes for Interactive Intelligent Products**
+***Example Codes for Interactive Intelligent Products***
 
 DBB220, Department of Industrial Design, TU Eindhoven, 2020
 
-Responsible Lecturer: Dr. Rong-Hao Liang 
-
+**Responsible Lecturer: Dr. Rong-Hao Liang***
 Assistant Processor, Future Everyday Group, Industrial Design, TU Eindhoven
-
 Assistant Processor, Signal Processing Systems Group, Electrical Engineering, TU Eindhoven
-
 Homepage: http://www.ronghaoliang.me/
 
 
-*Introduction*
+***Introduction***
 
-Sensors not only enable the interactivity of products but also generate data. Machine intelligence leverages computational power and data to empower further the product to deal with design problems involved prediction, decision, and adaptation. This course aims to help the students understand the main paradigms in sensing, data collection, signal processing, and machine learning to apply them in meaningful design solutions of intelligent interactive products.
+**Sensors** not only enable the interactivity of products but also generate data. **Machine intelligence** leverages computational power and data to empower further the product to deal with design problems involved prediction, decision, and adaptation. This course aims to help the students understand the main paradigms in sensing, data collection, signal processing, and machine learning to apply them in meaningful design solutions of **intelligent interactive products**.
 
 The course combine theories and practices. Through a series of lectures and workshops, you will learn the principle and functionality of the sensors and machine intelligence. You will develop the ability to use these signal processing methods and machine learning algorithms to deal with everyday life problems where real-world complexity, uncertainty, and changing conditions make the use of these technical solutions a necessity. Understanding the type of problems that really will benefit from the utilization of signal processing methods and machine learning algorithms and creating realistic scenarios of use is equally important.
 
-Arduino, Processing, and Weka are used as the development platform. Ready available example codes are available in Github repository, so you don’t have to implement the algorithms from scratch.
+**Arduino**, **Processing**, and **Weka** are used as the development platform. Ready available example codes are available in Github repository, so you don’t have to implement the algorithms from scratch.
 
 **Course Syllabus**
 1. Introduction and Problem Formulation
