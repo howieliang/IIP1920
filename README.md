@@ -1,11 +1,13 @@
-***Example Codes for Interactive Intelligent Products***
-
+***Example Codes: Interactive Intelligent Products***
 DBB220, Department of Industrial Design, TU Eindhoven, 2020
 
 **Responsible Lecturer: Dr. Rong-Hao Liang***
 Assistant Processor, Future Everyday Group, Industrial Design, TU Eindhoven
 Assistant Processor, Signal Processing Systems Group, Electrical Engineering, TU Eindhoven
+
 Homepage: http://www.ronghaoliang.me/
+
+email: r.liang@tue.nl
 
 
 ***Introduction***
@@ -17,6 +19,7 @@ The course combine theories and practices. Through a series of lectures and work
 **Arduino**, **Processing**, and **Weka** are used as the development platform. Ready available example codes are available in Github repository, so you don’t have to implement the algorithms from scratch.
 
 **Course Syllabus**
+
 *1. Introduction and Problem Formulation*
 
 1.1 Introduction 
