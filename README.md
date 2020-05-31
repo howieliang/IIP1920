@@ -2,12 +2,11 @@
 
 DBB220, Department of Industrial Design, TU Eindhoven, 2020
 
-Responsible Lecturer: Dr. Rong-Hao Liang
-
-* Assistant Professor, Future Everyday Group, Industrial Design, TU Eindhoven
-* Assistant Professor, Signal Processing Systems Group, Electrical Engineering, TU Eindhoven
-* Homepage: http://www.ronghaoliang.me/
-* email: r.liang@tue.nl
+* Responsible Lecturer: Dr. Rong-Hao Liang
+  * Assistant Professor, Future Everyday Group, Industrial Design, TU Eindhoven
+  * Assistant Professor, Signal Processing Systems Group, Electrical Engineering, TU Eindhoven
+  * Homepage: http://www.ronghaoliang.me/
+  * email: r.liang@tue.nl
 
 
 ## Introduction
@@ -21,64 +20,38 @@ The course combine theories and practices. Through a series of lectures and work
 ## Course Syllabus
 
 ### 1. Introduction and Problem Formulation
-
-1.1 Introduction 
-
-1.2 Problem Formulation
-
+* 1.1 Introduction 
+* 1.2 Problem Formulation
 
 ### 2. Data Preparation and Serial Communication
-
-2.1 Data Preparation
-
-2.2 Serial Communication
-
+* 2.1 Data Preparation
+* 2.2 Serial Communication
 
 ### 3. Classification and Regression
-
-3.1 Classification
-
-3.2 Regression
-
+* 3.1 Classification
+* 3.2 Regression
 
 ### 4. Time-Series Signal Processing
-
-4.1 Time-Series Signal Processing
-
-4.2 Real-Time Motion Classification and Regression
-
+* 4.1 Time-Series Signal Processing
+* 4.2 Real-Time Motion Classification and Regression
 
 ### 5. Evaluation and Reporting
-
-5.1 More Algorithms
-
-5.2 Evaluation and Reporting
-
+* 5.1 More Algorithms
+* 5.2 Evaluation and Reporting
 
 ### 6. Frequency-Domain Signal Processing
-
-6.1 Extraction Features in Frequency Domain
-
-6.2 Recognizing Sounds and Vibrations
-
+* 6.1 Extraction Features in Frequency Domain
+* 6.2 Recognizing Sounds and Vibrations
 
 ### 7. Sensor Fusion and Feature Selection
-
-7.1 Sensor Fusion and Context Recognition
-
-7.2 Feature Selection and Dimensionality Reduction
-
+* 7.1 Sensor Fusion and Context Recognition
+* 7.2 Feature Selection and Dimensionality Reduction
 
 ### 8. Spatial-Domain Signal Processing
-
-8.1 Extracting Features from Images
-
-8.2 Camera-based Activity Recognition
-
+* 8.1 Extracting Features from Images
+* 8.2 Camera-based Activity Recognition
 
 ### 9. Neural Networks and Wrap Up
-
-9.1 Neural Networks
-
-9.2 Looking Back and Moving Forward
+* 9.1 Neural Networks
+* 9.2 Looking Back and Moving Forward
 
