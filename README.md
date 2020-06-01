@@ -17,8 +17,9 @@ The course combine theories and practices. Through a series of lectures and work
 
 ![Course Overview: Topics Covered in Interactive Intelligent Products](https://paper-attachments.dropbox.com/s_2872065C7B1453917D680BF73E65026F47C98466B9BC5AC6E5A3A3247AFA79E1_1590991337954_image.png)
 
-# 0. Prerequisites
 ----------
+
+# 0. Prerequisites
 ## 0.1 Hardware and Equipments
 - **Microcontrollers: Please get at least one of the following microcontroller boards from an online store.**
     - All the example codes used in this course were made for [Arduino Leonardo](https://en.wikipedia.org/wiki/Arduino). The small Arduino board that I used in the lecture is [DFRobot Beetle](https://www.kiwi-electronics.nl/beetle-arduino-leonardo?search=beetle), which is available in Kiwi electronics. [Teensy](https://www.pjrc.com/teensy/) and [Circuit Playground](https://www.adafruit.com/index.php?main_page=category&cPath=888)are also Arduino-compatible. For this course, I highly recommend [Circuit Playground](https://www.kiwi-electronics.nl/circuit-playground-developer-edition?search=Circuit%20playground&description=true) or [Circuit Playground Express](https://www.kiwi-electronics.nl/circuit-playground-express?search=Circuit%20playground&description=true) platforms, which have various on-board sensors so that you don't need to solder or interface additional sensors by soldering.
@@ -31,7 +32,6 @@ The course combine theories and practices. Through a series of lectures and work
     - To connect the sensors and the microcontroller, you might need [solder equipment](https://www.tinytronics.nl/shop/index.php?route=product/search&search=solder), [wires, and breadboard](https://www.tinytronics.nl/shop/index.php?route=product/search&search=breadboard). For debugging, you might need a [multimeter](https://www.tinytronics.nl/shop/nl/prototyping/meten/budget-multimeter-dvm832). Please try to get your "home lab" ready so you will be free to explore. 
 ## 0.2 Processing and WEKA
 We use [Processing](https://processing.org/) as the main software programming environment because it's powerful, simple, and versatile. It also support popular machine learning libraries such as [WEKA](https://www.cs.waikato.ac.nz/~ml/weka/). Please get the Processing IDE installed before lectures.
-
 
 - **Installation**
     1. *Get the latest version* *(3+)* *from the Processing download page:* *https://processing.org/download/?processing* (Links to an external site.)
@@ -53,7 +53,6 @@ We use [Arduino IDE](https://www.arduino.cc/) and the [Wiring](http://wiring.org
     
 - **Install the Arduino Software**
     *Get the latest version from the Arduino download page:* [*https://www.arduino.cc/en/Main/Software*](https://www.arduino.cc/en/Main/Software). The page provides install files for Windows, Mac OS X, and Linux as shown below. Download the install file of your operating system. Open file after downloading and proceed with the installation. *(You could also take a look at the official documents for* [*Windows*](https://www.arduino.cc/en/Guide/Windows#toc2)*,* [*Mac*](https://www.arduino.cc/en/Guide/MacOSX#toc2)*, and* [*Linux*](https://www.arduino.cc/en/Guide/Linux#toc2)*.)* More tutorials of Arduino can be found [Here](https://www.arduino.cc/en/Tutorial/HomePage).
-
 
 # 1. Introduction and Problem Formulation
 ## 1.1 Introduction
