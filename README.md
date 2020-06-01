@@ -56,7 +56,6 @@ We use [Arduino IDE](https://www.arduino.cc/) and the [Wiring](http://wiring.org
 
 
 # 1. Introduction and Problem Formulation
-----------
 ## 1.1 Introduction
 - **Overview**
 - **Prerequisites**
@@ -71,7 +70,6 @@ We use [Arduino IDE](https://www.arduino.cc/) and the [Wiring](http://wiring.org
 - **Types of Learning**
 
 # 2. Data Preparation and Serial Communication
-----------
 ## 2.1 Data Preparation
 - **CSV vs. ARFF**
 - **Save data as ARFF files**
@@ -84,7 +82,6 @@ We use [Arduino IDE](https://www.arduino.cc/) and the [Wiring](http://wiring.org
 - **Bidirectional Serial Data Streaming between Arduino and Processing**
 
 # 3. Classification and Regression
-----------
 ## 3.1 Classification
 - **Noise in Data**
 - **Linear Support Vector Classification**
@@ -107,7 +104,6 @@ We use [Arduino IDE](https://www.arduino.cc/) and the [Wiring](http://wiring.org
 - **Real-Time Posture Regression**
 
 # 4. Time-Series Signal Processing
-----------
 ## 4.1 Time-Series Signal Processing
 - **Visualizing Sensor Data Stream**
 - **Segmentation and Activation Threshold**
@@ -119,7 +115,6 @@ We use [Arduino IDE](https://www.arduino.cc/) and the [Wiring](http://wiring.org
 - **Using More Features**
 
 # 5. Evaluation and Reporting
-----------
 ## 5.1 More Algorithms
 - **More Classifiers**
     - K-Nearest Neighbors Classifier
@@ -144,7 +139,6 @@ We use [Arduino IDE](https://www.arduino.cc/) and the [Wiring](http://wiring.org
     - Reporting
 
 # 6. Frequency-Domain Signal Processing
-----------
 ## 6.1 Extraction Features in Frequency Domain
 - **Time Series in Frequency Domain**
 - **Sampling Theory**
@@ -157,7 +151,6 @@ We use [Arduino IDE](https://www.arduino.cc/) and the [Wiring](http://wiring.org
 - **Real-time vibration classification using an accelerometer**
 
 # 7. Sensor Fusion and Feature Selection
-----------
 ## 7.1 Sensor Fusion and Context Recognition
 - **Human Activity Recognition Systems**
 - **Synchronizing Sensor Data Streams**
@@ -168,7 +161,6 @@ We use [Arduino IDE](https://www.arduino.cc/) and the [Wiring](http://wiring.org
 - **Dimensionality Reduction**
 
 # 8. Spatial-Domain Signal Processing
-----------
 ## 8.1 Extracting Features from Images
 - **Image Recognition and Computer Vision**
 - **Bitmap Data Structure**
@@ -184,7 +176,6 @@ We use [Arduino IDE](https://www.arduino.cc/) and the [Wiring](http://wiring.org
 - **Infra-red Cameras**
 
 # 9. Neural Networks and Wrap Up
-----------
 ## 9.1 Neural Networks
 - **Artificial Neural Network**
 - **Neuron and Activation Functions**
