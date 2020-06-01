@@ -20,7 +20,7 @@ The course combine theories and practices. Through a series of lectures and work
 ----------
 
 # 0. Prerequisites
-## 0.1 Hardware and Equipments
+## 0.1 Hardware and Equipment
 - **Microcontrollers: Please get at least one of the following microcontroller boards from an online store.**
     - All the example codes used in this course were made for [Arduino Leonardo](https://en.wikipedia.org/wiki/Arduino). The small Arduino board that I used in the lecture is [DFRobot Beetle](https://www.kiwi-electronics.nl/beetle-arduino-leonardo?search=beetle), which is available in Kiwi electronics. [Teensy](https://www.pjrc.com/teensy/) and [Circuit Playground](https://www.adafruit.com/index.php?main_page=category&cPath=888)are also Arduino-compatible. For this course, I highly recommend [Circuit Playground](https://www.kiwi-electronics.nl/circuit-playground-developer-edition?search=Circuit%20playground&description=true) or [Circuit Playground Express](https://www.kiwi-electronics.nl/circuit-playground-express?search=Circuit%20playground&description=true) platforms, which have various on-board sensors so that you don't need to solder or interface additional sensors by soldering.
 - **Sensors: Please get at least one of the following sensor modules from an online store.**
