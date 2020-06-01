@@ -1,25 +1,18 @@
-# Interactive Intelligent Products
+# DBB220 Interactive Intelligent Products - TU Eindhoven
 
 **Responsible Lecturer: Dr. Rong-Hao Liang** 
 *Assistant Professor, Future Everyday Group, Industrial Design, TU Eindhoven*
 *Assistant Professor, Signal Processing Systems Group, Electrical Engineering, TU Eindhoven*
 *Homepage: http://www.ronghaoliang.me/*
 
-**Teaching Assistants:**
-Dr. Zengrong Guo, *Post-doc Researcher, Future Everyday Group, Industrial Design, TU Eindhoven*
-Ruben van Dijk, *PhD candidate, Future Everyday Group, Industrial Design, TU Eindhoven*
-
 ----------
-
 **Sensors** not only enable the interactivity of products but also generate data. **Machine intelligence** leverages computational power and data to empower further the product to deal with design problems involved prediction, decision, and adaptation. This course aims to help the students understand the main paradigms in sensing, data collection, signal processing, and machine learning to apply them in meaningful design solutions of **intelligent interactive products**.
 
 ![An Interactive Intelligent Product](https://paper-attachments.dropbox.com/s_2872065C7B1453917D680BF73E65026F47C98466B9BC5AC6E5A3A3247AFA79E1_1590905704193_image.png)
 
-
 The course combine theories and practices. Through a series of lectures and workshops, you will learn the principle and functionality of the sensors and machine intelligence. You will develop the ability to use these signal processing methods and machine learning algorithms to deal with everyday life problems where real-world complexity, uncertainty, and changing conditions make the use of these technical solutions a necessity. Understanding the type of problems that really will benefit from the utilization of signal processing methods and machine learning algorithms and creating realistic scenarios of use is equally important.
 
 [**Arduino**](https://www.arduino.cc/)**,** [**Processing**](https://processing.org/), and [**Weka**](https://www.cs.waikato.ac.nz/~ml/weka/) are used as the development platform. Ready available example codes are available in [**Github repository**](https://github.com/howieliang/IIP1920), so you don’t have to implement the algorithms from scratch.
-
 
 ![Course Overview: Topics Covered in Interactive Intelligent Products](https://paper-attachments.dropbox.com/s_2872065C7B1453917D680BF73E65026F47C98466B9BC5AC6E5A3A3247AFA79E1_1590991337954_image.png)
 
@@ -63,7 +56,7 @@ We use [Arduino IDE](https://www.arduino.cc/) and the [Wiring](http://wiring.org
 
 # 1. Introduction and Problem Formulation
 ----------
-## 1.1 Introduction [slides](https://www.dropbox.com/s/4mczlvorezbzoh2/IIP1920_1_1.pdf?dl=0)
+## 1.1 Introduction
 - **Overview**
 - **Prerequisites**
 - **Schedule**
@@ -71,37 +64,27 @@ We use [Arduino IDE](https://www.arduino.cc/) and the [Wiring](http://wiring.org
 - **Module 2: Signal Processing**
 - **Synergies Between The Two Modules**
 
-Lecture Video: https://www.youtube.com/watch?v=a7Nz--vvmis&
-
-## 1.2 Problem Formulation [slides](https://www.dropbox.com/s/tm9xhc70onqxr4a/IIP1920_1_2.pdf?dl=0)
+## 1.2 Problem Formulation
 - **Why Machine Learning?**
 - **Formulate Supervised Learning problems**
 - **Types of Learning**
 
-Lecture Video (Part A): https://www.youtube.com/watch?v=PzeCHB3isQ0&
-
-Lecture Video (Part B): https://www.youtube.com/watch?v=j_OeFWBzhAY&
-
 # 2. Data Preparation and Serial Communication
 ----------
-## 2.1 Data Preparation [slides](https://www.dropbox.com/s/tnwxw5plvzsm10n/IIP1920_2_1.pdf?dl=0)
+## 2.1 Data Preparation
 - **CSV vs. ARFF**
 - **Save data as ARFF files**
 - **Load data as ARFF files**
 
-Lecture Video: https://www.youtube.com/watch?v=j-jRzfZ6OK8&
-
-## 2.2 Serial Communication [slides](https://www.dropbox.com/s/8sjtxuz3r2h0l2n/IIP1920_2_2.pdf?dl=0)
+## 2.2 Serial Communication
 - **Timer and Uniform Sampling**
 - **Send Sensor Data Stream to Processing**
 - **Save Serial Data as ARFF files**
 - **Bidirectional Serial Data Streaming between Arduino and Processing**
 
-Lecture Video: https://www.youtube.com/watch?v=AFH0IgNL-dc&
-
 # 3. Classification and Regression
 ----------
-## 3.1 Classification [slides](https://www.dropbox.com/s/89vzrp62b3om5p3/IIP1920_3_1.pdf?dl=0)
+## 3.1 Classification
 - **Noise in Data**
 - **Linear Support Vector Classification**
     - Linear Support Vector Classifier
@@ -114,11 +97,7 @@ Lecture Video: https://www.youtube.com/watch?v=AFH0IgNL-dc&
     - Load a test set and get the out-of-sample accuracy
 - **Real-Time Posture Classification**
 
-Lecture Video: https://www.youtube.com/watch?v=e3dy9guTdso&
-
-Lecture Video: https://www.youtube.com/watch?v=qF5q2biOkSY&
-
-## 3.2 Regression [slides](https://www.dropbox.com/s/jryd36lx89iwq3i/IIP1920_3_2.pdf?dl=0)
+## 3.2 Regression
 - **Linear Regression**
     - Linear Regressor
     - Train a regressor from data
@@ -126,27 +105,21 @@ Lecture Video: https://www.youtube.com/watch?v=qF5q2biOkSY&
     - Linear Regression in higher dimension
 - **Real-Time Posture Regression**
 
-Lecture Video: https://www.youtube.com/watch?v=5PYb6YdTido&
-
 # 4. Time-Series Signal Processing
 ----------
-## 4.1 Time-Series Signal Processing [slides](https://www.dropbox.com/s/yiysva470k1sp6b/IIP1920_4_1.pdf?dl=0)
+## 4.1 Time-Series Signal Processing
 - **Visualizing Sensor Data Stream**
 - **Segmentation and Activation Threshold**
 - **Windowing and Statistic Feature**
 
-Lecture Video: https://www.youtube.com/watch?v=RJz1QHV5VXA&
-
-## 4.2 ****Real-Time Motion Classification and Regression [slides](https://www.dropbox.com/s/iwoma1zpg1sbiap/IIP1920_4_2.pdf?dl=0)
+## 4.2 ****Real-Time Motion Classification and Regression
 - **Real-time motion classification**
 - **Real-time motion regression**
 - **Using More Features**
 
-Lecture Video: https://www.youtube.com/watch?v=QL4f3nL_XYY&
-
 # 5. Evaluation and Reporting
 ----------
-## 5.1 More Algorithms [slides](https://www.dropbox.com/s/aa5w86vgocuzij1/IIP1920_5_1.pdf?dl=0)
+## 5.1 More Algorithms
 - **More Classifiers**
     - K-Nearest Neighbors Classifier
     - Kernel Support Vector Classifier
@@ -155,9 +128,7 @@ Lecture Video: https://www.youtube.com/watch?v=QL4f3nL_XYY&
     - Kernel Support Vector Regressor
 - **Hyper-parameter Tuning**
 
-Lecture Video: https://www.youtube.com/watch?v=7JCryCb9Hr8&
-
-## 5.2 Evaluation and Reporting [slides](https://www.dropbox.com/s/8itkwydp3z0q5an/IIP1920_5_2.pdf?dl=0)
+## 5.2 Evaluation and Reporting
 - **More Evaluation Metrics**
     - True Positive Rate
     - False Positive Rate and Specificity
@@ -171,43 +142,33 @@ Lecture Video: https://www.youtube.com/watch?v=7JCryCb9Hr8&
     - Comparing different algorithms 
     - Reporting
 
-Lecture Video: https://www.youtube.com/watch?v=wP9pFwypqis&
-
 # 6. Frequency-Domain Signal Processing
 ----------
-## 6.1 Extraction Features in Frequency Domain [slides](https://www.dropbox.com/s/q3ef8w50fugpn32/IIP1920_6_1.pdf?dl=0)
+## 6.1 Extraction Features in Frequency Domain
 - **Time Series in Frequency Domain**
 - **Sampling Theory**
 - **Fast Fourier Transform**
 - **Window Overlapping vs. Information Loss**
 - **Segmentation, Windowing, and Filtering**
 
-Lecture Video: https://www.youtube.com/watch?v=a5hrJEwioRA&
-
-## 6.2 Recognizing Sounds and Vibrations [slides](https://www.dropbox.com/s/2a0l8lp0osc1jul/IIP1920_6_2.pdf?dl=0)
+## 6.2 Recognizing Sounds and Vibrations
 - **Real-time audio classification using a microphone**
 - **Real-time vibration classification using an accelerometer**
 
-Lecture Video: https://www.youtube.com/watch?v=hcO-6h3YF04&
-
 # 7. Sensor Fusion and Feature Selection
 ----------
-## 7.1 Sensor Fusion and Context Recognition [slides](https://www.dropbox.com/s/lo7w715xrwya7lg/IIP1920_7_1.pdf?dl=0)
+## 7.1 Sensor Fusion and Context Recognition
 - **Human Activity Recognition Systems**
 - **Synchronizing Sensor Data Streams**
 - **Context Recognition using Sensor Fusion**
 
-Lecture Video: https://www.youtube.com/watch?v=zm8rExDR3v0&
-
-## 7.2 Feature Selection and Dimensionality Reduction [slides](https://www.dropbox.com/s/pvfgy0r8fxy2cai/IIP1920_7_2.pdf?dl=0)
+## 7.2 Feature Selection and Dimensionality Reduction
 ****- **Feature Selection**
 - **Dimensionality Reduction**
 
-Lecture Video: https://www.youtube.com/watch?v=Xhk7XRY056w&
-
 # 8. Spatial-Domain Signal Processing
 ----------
-## 8.1 Extracting Features from Images [slides](https://www.dropbox.com/s/y98s082n8rvdhez/IIP1920_8_1.pdf?dl=0)
+## 8.1 Extracting Features from Images
 - **Image Recognition and Computer Vision**
 - **Bitmap Data Structure**
 - **Statistic Features: Histograms**
@@ -215,19 +176,15 @@ Lecture Video: https://www.youtube.com/watch?v=Xhk7XRY056w&
 - **Simplification and Downsampling**
 - **Segmentation methods**
 
-Lecture Video: https://www.youtube.com/watch?v=-p49Zmpv2EI&
-
-## 8.2 Camera-based Activity Recognition [slides](https://www.dropbox.com/s/2t5hecw8l33ostm/IIP1920_8_2.pdf?dl=0)
+## 8.2 Camera-based Activity Recognition
 - **Haar Cascade Classifier**
 - **Application: Real-time Face Detection**
 - **Marker-based Object Tracking**
 - **Infra-red Cameras**
 
-Lecture Video: https://www.youtube.com/watch?v=YzT65Gakxig&
-
 # 9. Neural Networks and Wrap Up
 ----------
-## 9.1 Neural Networks [slides](https://www.dropbox.com/s/36strjtu6i3s7p1/IIP1920_9_1.pdf?dl=0)
+## 9.1 Neural Networks
 ****- **Artificial Neural Network**
 - **Neuron and Activation Functions**
 - **Forward and Backward Propagation**
@@ -235,12 +192,4 @@ Lecture Video: https://www.youtube.com/watch?v=YzT65Gakxig&
 - **Training an ANN**
 - **Convolutional Neural Network**
 
-Lecture Video (Part A): https://www.youtube.com/watch?v=oV_I8WlBCOE&
-
-Lecture Video (Part B): https://www.youtube.com/watch?v=gwkk2lDYFaM&
-
-## 9.2 Looking Back and Moving Forward [slides](https://www.dropbox.com/s/9czzt5xjoacw07l/IIP1920_9_2.pdf?dl=0)
-
-Lecture Video: https://www.youtube.com/watch?v=QnVbIXzju_A&
-
-----------
+## 9.2 Looking Back and Moving Forward
