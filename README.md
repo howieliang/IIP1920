@@ -1,5 +1,5 @@
 # Example Codes: Interactive Intelligent Products 
-*DBB220, Semester 1920B, TU Eindhoven*
+*DBB220 / 2019 Semester B Quartile 4 / TU Eindhoven Industrial Design*
 
 **Responsible Lecturer: Dr. Rong-Hao Liang** 
 - *Assistant Professor, Future Everyday Group, Industrial Design, TU Eindhoven*
