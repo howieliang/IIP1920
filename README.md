@@ -1,4 +1,5 @@
-# DBB220 Interactive Intelligent Products - TU Eindhoven
+# Example Codes: Interactive Intelligent Products 
+*DBB220 TU Eindhoven, The Netherlands
 
 **Responsible Lecturer: Dr. Rong-Hao Liang** 
 *Assistant Professor, Future Everyday Group, Industrial Design, TU Eindhoven*
@@ -163,7 +164,7 @@ We use [Arduino IDE](https://www.arduino.cc/) and the [Wiring](http://wiring.org
 - **Context Recognition using Sensor Fusion**
 
 ## 7.2 Feature Selection and Dimensionality Reduction
-****- **Feature Selection**
+- **Feature Selection**
 - **Dimensionality Reduction**
 
 # 8. Spatial-Domain Signal Processing
@@ -185,7 +186,7 @@ We use [Arduino IDE](https://www.arduino.cc/) and the [Wiring](http://wiring.org
 # 9. Neural Networks and Wrap Up
 ----------
 ## 9.1 Neural Networks
-****- **Artificial Neural Network**
+- **Artificial Neural Network**
 - **Neuron and Activation Functions**
 - **Forward and Backward Propagation**
 - **Gradient Descent and Learning Rate**
