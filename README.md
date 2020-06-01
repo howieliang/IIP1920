@@ -108,7 +108,7 @@ We use [Arduino IDE](https://www.arduino.cc/) and the [Wiring](http://wiring.org
 - **Segmentation and Activation Threshold**
 - **Windowing and Statistic Feature**
 
-## 4.2 ****Real-Time Motion Classification and Regression
+## 4.2 Real-Time Motion Classification and Regression
 - **Real-time motion classification**
 - **Real-time motion regression**
 - **Using More Features**
