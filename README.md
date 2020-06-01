@@ -2,9 +2,9 @@
 * DBB220 - TU Eindhoven
 
 **Responsible Lecturer: Dr. Rong-Hao Liang** 
-*Assistant Professor, Future Everyday Group, Industrial Design, TU Eindhoven*
-*Assistant Professor, Signal Processing Systems Group, Electrical Engineering, TU Eindhoven*
-*Homepage: http://www.ronghaoliang.me/*
+- * Assistant Professor, Future Everyday Group, Industrial Design, TU Eindhoven *
+- * Assistant Professor, Signal Processing Systems Group, Electrical Engineering, TU Eindhoven *
+- * Homepage: http://www.ronghaoliang.me/ *
 
 ----------
 **Sensors** not only enable the interactivity of products but also generate data. **Machine intelligence** leverages computational power and data to empower further the product to deal with design problems involved prediction, decision, and adaptation. This course aims to help the students understand the main paradigms in sensing, data collection, signal processing, and machine learning to apply them in meaningful design solutions of **intelligent interactive products**.
